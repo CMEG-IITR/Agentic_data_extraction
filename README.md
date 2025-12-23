@@ -194,7 +194,7 @@ Update model configuration:
 ```python
 dynamic_llm = AzureChatOpenAI(
     azure_deployment="your-model-name",
-    temperature=0.001,  # Lower = more consistent, higher = more creative
+    temperature=0.001,  # Range 0-2: Lower = more deterministic, higher = more creative
     max_tokens=max_tok
 )
 ```
