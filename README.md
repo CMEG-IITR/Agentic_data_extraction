@@ -194,7 +194,7 @@ Update model configuration:
 ```python
 dynamic_llm = AzureChatOpenAI(
     azure_deployment="your-model-name",
-    temperature=0.001,  # Adjust for consistency vs creativity
+    temperature=0.001,  # Lower = more consistent, higher = more creative
     max_tokens=max_tok
 )
 ```
@@ -258,7 +258,7 @@ GitHub repository: https://github.com/CMEG-IITR/Agentic_data_extraction
 ## 🔗 Resources
 
 - [LangChain Documentation](https://python.langchain.com/)
-- [LangGraph Documentation](https://langchain-ai.github.io/langgraph/)
+- [LangGraph Documentation](https://python.langchain.com/docs/langgraph/)
 - [Azure OpenAI Service](https://azure.microsoft.com/en-us/products/ai-services/openai-service)
 
 ## 👥 Team
