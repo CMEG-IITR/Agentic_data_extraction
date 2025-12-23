@@ -1,4 +1,4 @@
-# Agentic Data Extraction for Thermoelectric Materials
+# Agentic Data Extraction 
 
 An intelligent, multi-agent system for automated extraction of thermoelectric and structural properties from scientific papers using LLM-powered agents and LangGraph workflows.
 
