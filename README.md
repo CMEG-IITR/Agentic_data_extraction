@@ -44,7 +44,7 @@ The system uses a graph-based workflow orchestrated by LangGraph, with multiple 
 Install the required packages:
 
 ```bash
-pip install langchain langchain-google-genai langchain-openai langgraph pandas json5
+pip install langchain langchain-google-genai langchain-openai langgraph pandas json5 typing-extensions
 ```
 
 **Core Dependencies:**
@@ -228,7 +228,7 @@ time.sleep(t)
 
 **Missing Dependencies**: Ensure all packages are installed:
 ```bash
-pip install langchain langchain-google-genai langchain-openai langgraph pandas json5
+pip install langchain langchain-google-genai langchain-openai langgraph pandas json5 typing-extensions
 ```
 
 ## 🤝 Contributing
