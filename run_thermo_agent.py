@@ -65,11 +65,9 @@ def set_tokens_node(state: State) -> State:
     # Compute max_tokens
     if token_count <= 1000:
         max_tok = 786
-    elif token_count <= 3000:
-        max_tok = 1024
     else:
-        extra = (token_count - 3000) // 1000
-        max_tok = 1024 + (512 * (extra + 1))
+        extra = (token_count - 1000) // 500
+        max_tok = 786 + (256 * extra)
         max_tok = min(max_tok, 5120)
 
     print(f"🧠 Setting max_tokens = {max_tok} for {folder.name} (token_count = {token_count})")
@@ -160,7 +158,7 @@ def count_table_and_plan_tokens_node(state: State) -> State:
     if total_rows == 0:
         max_tokens = 512  # Default to 512 if no rows are found
     else:
-        max_tokens = min(512 + total_rows * 325, 5120)  # Heuristic calculation
+        max_tokens = min(512 + total_rows * 128, 5120)  # Heuristic calculation
 
     # Ensure dynamic_llm always gets updated with max_tokens
     dynamic_llm = AzureChatOpenAI(
