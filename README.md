@@ -1,6 +1,6 @@
 # Agentic Data Extraction 
 
-An intelligent, multi-agent system for automated extraction of thermoelectric and structural properties from scientific papers using LLM-powered agents and LangGraph workflows.
+An intelligent, multi-agent system for automated extraction of thermoelectric and structural properties from scientific papers using LLM-powered agents and LangGraph workflows. Find the dataset at : https://cmeg-iitr.github.io/thermoelectric_dataset
 
 ## 🔬 Overview
 
